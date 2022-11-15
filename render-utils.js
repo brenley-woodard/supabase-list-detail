@@ -1,6 +1,6 @@
 export function renderFood(food) {
     const foodEl = document.createElement('a');
-    foodEl.href = `./food/?id = ${food.id}`;
+    foodEl.href = `./food/?id=${food.id}`;
     foodEl.classList.add('food-card');
 
     const nameEl = document.createElement('p');

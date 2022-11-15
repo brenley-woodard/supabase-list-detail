@@ -8,3 +8,8 @@ export async function getAllFoods() {
     const response = await client.from('favorite_foods').select();
     return response.data;
 }
+
+export async function getFood(id) {
+    const response = await client.from('favorite_foods').select('*').match({ id: id }).single();
+    return response;
+}
