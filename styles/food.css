@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.food-card {
+    border: 5px solid black;
+}
+
+.food-img {
+    max-width: 300px;
+}
