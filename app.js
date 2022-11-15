@@ -11,6 +11,7 @@ window.addEventListener('load', async () => {
     const foods = await getAllFoods();
 
     for (let food of foods) {
+        console.log(food);
         const foodEl = renderFood(food);
         foodsContainer.append(foodEl);
     }

@@ -5,6 +5,6 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getAllFoods() {
-    const response = await client.from('favorite_foods').select('*');
-    return response;
+    const response = await client.from('favorite_foods').select();
+    return response.data;
 }
