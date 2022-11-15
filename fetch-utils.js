@@ -11,5 +11,5 @@ export async function getAllFoods() {
 
 export async function getFood(id) {
     const response = await client.from('favorite_foods').select('*').match({ id: id }).single();
-    return response;
+    return response.data;
 }

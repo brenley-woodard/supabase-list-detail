@@ -7,18 +7,29 @@ export function renderFood(food) {
     nameEl.textContent = food.name;
     nameEl.classList.add('food-name');
 
-    const locationEl = document.createElement('p');
-    locationEl.textContent = food.location;
-    locationEl.classList.add('food-location');
-
-    const mealTypeEl = document.createElement('p');
-    mealTypeEl.textContent = food.meal_type;
-    mealTypeEl.classList.add('meal-type');
-
     const imgEl = document.createElement('img');
     imgEl.src = food.img;
     imgEl.classList.add('food-img');
 
-    foodEl.append(nameEl, locationEl, mealTypeEl, imgEl);
+    foodEl.append(nameEl, imgEl);
     return foodEl;
+}
+
+export function renderFoodDetail(foodItem) {
+    const div = document.createElement('div');
+
+    const nameEl = document.createElement('p');
+    nameEl.textContent = foodItem.name;
+
+    const locationEl = document.createElement('p');
+    locationEl.textContent = foodItem.location;
+
+    const mealTypeEl = document.createElement('p');
+    mealTypeEl.textContent = foodItem.meal_type;
+
+    const imgEl = document.createElement('img');
+    imgEl.src = foodItem.img;
+
+    div.append(nameEl, locationEl, mealTypeEl, imgEl);
+    return div;
 }
