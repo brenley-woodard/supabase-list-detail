@@ -1,6 +1,8 @@
 export function renderFood(food) {
     const foodEl = document.createElement('a');
-    // foodEl.href = `./`;
+    foodEl.href = `./food/?id = ${food.id}`;
+    foodEl.classList.add('food-card');
+
     const nameEl = document.createElement('p');
     nameEl.textContent = food.name;
     nameEl.classList.add('food-name');
@@ -15,6 +17,7 @@ export function renderFood(food) {
 
     const imgEl = document.createElement('img');
     imgEl.src = food.img;
+    imgEl.classList.add('food-img');
 
     foodEl.append(nameEl, locationEl, mealTypeEl, imgEl);
     return foodEl;

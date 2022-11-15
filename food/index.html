@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- metadata -->
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Favorite Foods</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+
+        <!-- js -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+        ></script>
+        <script type="module" src="food.js"></script>
+
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
     </head>
-    <body></body>
+
+    <body>
+        <header>
+            <h1>Bren's Favorite Disneyland Foods</h1>
+            <a href="../">Home</a>
+        </header>
+
+        <main>
+            <section>
+                <div id="food-detail-container"></div>
+            </section>
+        </main>
+    </body>
 </html>
