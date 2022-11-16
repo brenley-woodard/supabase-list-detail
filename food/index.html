@@ -15,25 +15,28 @@
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="food.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/food.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/food.css" />
         <!-- add link for page specific css -->
     </head>
 
     <body>
         <header>
             <h1>Bren's Favorite Disneyland Foods</h1>
+            <a href="../">Home</a>
         </header>
 
         <main>
-            <div id="foods-container"></div>
+            <section>
+                <div id="food-detail-container"></div>
+            </section>
         </main>
     </body>
 </html>
